@@ -1,0 +1,403 @@
+.img-11 {
+  position: absolute;
+  top: 1.875em;
+  left: 0.625em;
+  width: 21.875em;
+  height: 15.625em;
+  transform: rotate(-35deg);
+  z-index: 5001;
+}
+.img-22 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 200px;
+  height: 250px;
+  transform: rotate(25deg);
+}
+.img-33 {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 200px;
+  height: 280px;
+  transform: rotate(-35deg);
+}
+.img-44 {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 230px;
+  height: 270px;
+  transform: rotate(5deg);
+}
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 5000;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+.modal__body {
+  width: 50em;
+  height: 31.25em;
+  background-color: white;
+  margin: 50px auto;
+
+  position: relative;
+
+  border-radius: 5px;
+  animation: modalFadenIn ease 0.6s;
+}
+
+.modal.open {
+  display: flex;
+}
+.btn {
+  position: absolute;
+  z-index: 10;
+  color: yellow;
+  background-color: red;
+  border-radius: 90%;
+  font-size: 25px;
+  top: 570px;
+  left: 47.5%;
+}
+.cc {
+  color: yellow;
+  animation: example 5s infinite;
+}
+.ccc {
+  color: red;
+  animation: examples 3s infinite;
+}
+.container {
+  height: 500px;
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+
+  background-color: #0093d8;
+  background: -moz-linear-gradient(top, #0093d8, #fff);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #fff),
+    color-stop(1, #0485c0)
+  );
+
+  -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+i {
+  position: absolute;
+  top: 110px;
+  left: 393px;
+  font-size: 30px;
+  color: yellow;
+  animation: example 2s infinite;
+}
+@keyframes example {
+  from {
+    color: yellow;
+  }
+  to {
+    color: red;
+  }
+}
+@keyframes examples {
+  from {
+    color: red;
+  }
+  to {
+    color: yellow;
+  }
+}
+@keyframes ccc {
+  0% {
+    background-color: radial-gradient(50% 50%, circle, #f9d0be, #c8171f 70%);
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+h1 {
+  position: absolute;
+  right: 270px;
+}
+.bottom_snow {
+  position: absolute;
+  z-index: 5;
+  top: 400px;
+  left: 50%;
+  margin-left: -500px;
+  width: 1000px;
+  height: 1000px;
+  background: #e2e2e2;
+
+  border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+}
+.bottom_snow:before,
+.bottom_snow:after {
+  background-color: #fff;
+  content: "";
+  height: 1000px;
+  position: absolute;
+  top: -25px;
+  width: 1000px;
+
+  border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+}
+.bottom_snow:before {
+  left: 400px;
+}
+.bottom_snow:after {
+  right: 400px;
+}
+.tree,
+.tree:before,
+.tree:after,
+.tree_bot,
+.tree_bot:before,
+.tree_bot:after {
+  height: 0;
+  position: absolute;
+  width: 0;
+
+  border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+}
+.tree {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid green;
+  left: 390px;
+  top: 135px;
+}
+.tree:before {
+  content: "";
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 40px solid green;
+  left: -40px;
+  top: 15px;
+}
+.tree:after {
+  content: "";
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid green;
+  left: -60px;
+  top: 40px;
+}
+/* tree, bottom side */
+.tree_bot {
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 80px solid green;
+  left: 330px;
+  top: 210px;
+}
+.tree_bot:before {
+  content: "";
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid green;
+  left: -100px;
+  top: 40px;
+}
+.tree_bot:after {
+  content: "";
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-bottom: 120px solid green;
+  left: -120px;
+  top: 80px;
+}
+.ball {
+  height: 40px;
+  left: 390px;
+  position: absolute;
+  top: 345px;
+  width: 40px;
+
+  border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+
+  box-shadow: 0 0 5px #777;
+  -moz-box-shadow: 0 0 5px #777;
+  -webkit-box-shadow: 0 0 5px #777;
+}
+.red {
+  background-color: #c8171f;
+  /* background-image: -webkit-radial-gradient(
+    50% 50%,
+    circle,
+    #f9d0be,
+    #c8171f 70%
+  );
+  background-image: -moz-radial-gradient(50% 50%, circle, #f9d0be, #c8171f 70%);
+  background-image: -o-radial-gradient(50% 50%, circle, #f9d0be, #c8171f 70%);
+  background-image: radial-gradient(50% 50%, circle, #f9d0be, #c8171f 70%); */
+  animation: ccc 3s infinite;
+  left: 340px;
+  top: 325px;
+}
+.blue {
+  background-color: #00a1ee;
+  background-image: -webkit-radial-gradient(
+    50% 50%,
+    circle,
+    #cde6f9,
+    #00a1ee 70%
+  );
+  background-image: -moz-radial-gradient(50% 50%, circle, #cde6f9, #00a1ee 70%);
+  background-image: -o-radial-gradient(50% 50%, circle, #cde6f9, #00a1ee 70%);
+  background-image: radial-gradient(50% 50%, circle, #cde6f9, #00a1ee 70%);
+}
+.green {
+  background-color: #4d8d00;
+  background-image: -webkit-radial-gradient(
+    50% 50%,
+    circle,
+    #d1e5b2,
+    #4d8d00 70%
+  );
+  background-image: -moz-radial-gradient(50% 50%, circle, #d1e5b2, #4d8d00 70%);
+  background-image: -o-radial-gradient(50% 50%, circle, #d1e5b2, #4d8d00 70%);
+  background-image: radial-gradient(50% 50%, circle, #d1e5b2, #4d8d00 70%);
+
+  left: 440px;
+  top: 325px;
+}
+.rsmall,
+.gsmall,
+.bsmall {
+  height: 25px;
+  width: 25px;
+}
+.rsmall {
+  left: 440px;
+  top: 255px;
+}
+.bsmall {
+  left: 350px;
+  top: 255px;
+}
+.gsmall {
+  left: 395px;
+  top: 275px;
+}
+
+.snow-container {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  z-index: 999;
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+}
+.snow {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-animation: snow linear infinite;
+  animation: snow linear infinite;
+}
+.snow.foreground {
+  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+  -webkit-animation-duration: 15s;
+  animation-duration: 10s;
+}
+.snow.foreground.layered {
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
+}
+.snow.middleground {
+  background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png);
+  -webkit-animation-duration: 20s;
+  animation-duration: 15s;
+}
+.snow.middleground.layered {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+.snow.background {
+  background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png);
+  -webkit-animation-duration: 25s;
+  animation-duration: 20s;
+}
+.snow.background.layered {
+  -webkit-animation-delay: 12.5s;
+  animation-delay: 12.5s;
+}
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(5%, 100%, 0);
+    transform: translate3d(5%, 100%, 0);
+  }
+}
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(5%, 100%, 0);
+    transform: translate3d(5%, 100%, 0);
+  }
+}
+.img-left {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+}
+.img-right {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+}
